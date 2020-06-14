@@ -1,3 +1,7 @@
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import org.junit.jupiter.api.Test;
+
 /*
 You probably know the "like" system from Facebook and other pages. People can "like" blog posts, pictures or other items. We want to create the text that should be displayed next to such an item.
 Implement a function likes :: [String] -> String, which must take in input array, containing the names of people who like an item. It must return the display text as shown in the examples:
@@ -20,7 +24,16 @@ public class WhoLikesIt {
 	      return names[0]+", "+names[1]+" and "+(names.length-2)+" others like this";        
 	        
 	    }
+	@Test
+    public void staticTests() {
+        assertEquals("no one likes this", WhoLikesIt.whoLikesIt());
+        assertEquals("Peter likes this", WhoLikesIt.whoLikesIt("Peter"));
+        assertEquals("Jacob and Alex like this", WhoLikesIt.whoLikesIt("Jacob", "Alex"));
+        assertEquals("Max, John and Mark like this", WhoLikesIt.whoLikesIt("Max", "John", "Mark"));
+        assertEquals("Alex, Jacob and 2 others like this", WhoLikesIt.whoLikesIt("Alex", "Jacob", "Mark", "Max"));
+    }
 
 }
+
 
 
