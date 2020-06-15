@@ -6,10 +6,7 @@ Might also create a handy cheat-sheet of frequenly used Java methods.
 
 2. Convert a characet to Uppercase: Character.toUpperCase(ch);
 
-3. You can also append an empty string using += same as Python:
-	ex:
-		String result = ""
-		for(char ch: array){
-			result += ch;
-		}
+3. You can also append an empty string using += same as Python
+
+4. Sort an array: Arrays.sort(args);
 
