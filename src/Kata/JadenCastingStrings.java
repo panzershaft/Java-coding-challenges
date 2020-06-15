@@ -12,7 +12,6 @@ Note that the Java version expects a return value of null for an empty string or
  */
 package Kata;
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertNull;
 
 import org.junit.Test;
@@ -22,15 +21,17 @@ public class JadenCastingStrings {
 	
 	public String toJadenCase(String phrase) {
 		
-		if (phrase == null || phrase == "") return null;
+		if (phrase == null || phrase.equals("")) return null;
+		
 		char[] array = phrase.toCharArray();
-		String result = "";
+		StringBuilder result = new StringBuilder();
+		
 		for(int i = 0; i < array.length; i++) {
-			if(i == 0 || array[i-1] == ' ') result += Character.toUpperCase(array[i]); 
-			else result += array[i];
+			if(i == 0 || array[i-1] == ' ') result.append(Character.toUpperCase(array[i])); 
+			else result.append(array[i]);
 		}
-		System.out.println(result);
-		return result;
+
+		return result.toString();
 	}
 	
 	
