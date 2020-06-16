@@ -46,4 +46,8 @@ Might also create a handy cheat-sheet of frequenly used Java methods.
 	int num = 5;
 	String.valueOf(num);
 	```
-
+	
+9. Get range/length of an int: 
+	```
+	int length = String.valueOf(num).length();
+	```
