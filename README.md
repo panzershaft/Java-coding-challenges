@@ -41,3 +41,9 @@ Might also create a handy cheat-sheet of frequenly used Java methods.
 	}
 	```
 
+8. Use an int value for String:
+	```
+	int num = 5;
+	String.valueOf(num);
+	```
+
