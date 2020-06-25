@@ -51,3 +51,10 @@ Might also create a handy cheat-sheet of frequenly used Java methods.
 	```
 	int length = String.valueOf(num).length();
 	```
+10. Convert character to its desired int using ASCII:
+	(The difference between character and desired integer is always 48,
+	48 in ASCII represents character:'0')
+	```
+	char digit = '6'
+	digit - '0' == 6;
+	```
